@@ -8,7 +8,8 @@ var indexRouter = require('./routes/index');
 var ToyShopRouter = require('./routes/ToyShop');
 
 var mongoose = require('mongoose');
-var url = "mongodb+srv://nguyentrung:nntrung382k2@cluster.8b5c38m.mongodb.net/ATN"
+//var url = "mongodb+srv://nguyentrung:nntrung382k2@cluster.8b5c38m.mongodb.net/ATN"
+var url = "mongodb://localhost:27017/ATN"
 
 mongoose.connect(url, { useNewUrlParser: true }, err => {
   if (!err) {
@@ -17,8 +18,6 @@ mongoose.connect(url, { useNewUrlParser: true }, err => {
     console.error(err)
   }
 })
-
-var hbs = require('hbs')
 
 var app = express();
 
@@ -36,7 +35,7 @@ app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', indexRouter);
-app.use('/ATN', ToyShopRouter);
+app.use('/ToyShop', ToyShopRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
