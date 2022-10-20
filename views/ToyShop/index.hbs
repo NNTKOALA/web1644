@@ -2,9 +2,9 @@
     <tr>
         <th class="text-primary" colspan="5">Toy List</th>
         <th>
-            <a class="btn btn-primary" href="/ToyShop/add">ADD</a>
+            <a class="btn btn-primary" href="/ToyShop/add">Add</a>
             <a class="btn btn-success" href="/ToyShop/drop"
-                onclick="return confirm('Are you sure to drop all student ?');">DROP</a>
+                onclick="return confirm('Are you sure to drop all student ?');">Drop</a>
         </th>
     </tr>
     <tr>
@@ -30,7 +30,6 @@
         <td>{{type}}</td>
         <td>{{code}}</td>
         <td>{{price}}</td>
-        <td>{{dateFormat dob "DD/MM/YYYY"}}</td>
         <td>
             <a href="ToyShop/detail/{{_id}}">
                 <img src="{{image}}" width="100" height="100">
