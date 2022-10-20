@@ -1,2 +1,34 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<table class="table table-bordered bg-light p-4 mt-3 mb-3 text-center">
+    <tr>
+        <th class="text-primary" colspan="5">Toy List</th>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Code</th>
+        <th>Price</th>
+        <th>Image</th>
+    </tr>
+    <tr>
+        <th colspan="2">
+            <form action="ToyShop/search" method="post">
+                <div class="form-group">
+                    <input class="form-control" type="search" name="name" placeholder="Search">
+                </div>
+            </form>
+        </th>
+    </tr>
+    {{#each ToyShop }}
+    <tr>
+        <td>{{name}}</td>
+        <td>{{type}}</td>
+        <td>{{code}}</td>
+        <td>{{price}}</td>
+        <td>
+            <a href="ToyShop/detail/{{_id}}">
+                <img src="{{image}}" width="100" height="100">
+            </a>
+        </td>
+    </tr>
+    {{/each}}
+</table>

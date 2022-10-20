@@ -1,9 +1,14 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express')
+const ToyShopModel = require('../models/ToyShopModel')
+const router = express.Router()
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+//URL: localhost:3000/ToyShop
+router.get('/', (req, res) => {
+  ToyShopModel.find((err, data) => {
+    if (!err) {
+      res.render('index', { ToyShop: data })
+    }
+  })
+})
 
-module.exports = router;
+module.exports = router
