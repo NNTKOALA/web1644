@@ -75,7 +75,7 @@ router.post('/edit/:id', (req, res) => {
 router.get('/detail/:id', (req, res) => {
   ATNModel.findById(req.params.id, (err, ToyShop) => {
     if (!err) {
-      res.render('ToyShop/info', { ToyShop: student })
+      res.render('ToyShop/info', { ToyShop: ToyShop })  
     }
   })
 })
