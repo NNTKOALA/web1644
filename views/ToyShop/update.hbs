@@ -1,0 +1,32 @@
+<div class="container col-md-8 mt-5">
+    <form action="/ToyShop/edit/{{ToyShop._id}}" method="post" class="card p-3 bg-light text-center">
+        <h2 class="text text-primary">Edit Toy Info</h2>
+        <div class="form-group">
+            <label class="text-success h6">Toy Name</label>
+            <input class="form-control" type="text" name="name" value="{{ToyShop.name}}" required minlength="3"
+                maxlength="20">
+        </div>
+        <div class="form-group mt-3">
+            <label class="text-success h6">Toy Type</label>
+            <input class="form-control" type="email" name="type" value="{{ToyShop.type}}" required minlength="3"
+                maxlength="20">
+        </div>
+        <div class="form-group mt-3">
+            <label class="text-success h6">Toy Code</label>
+            <input class="form-control" type="email" name="code" value="{{ToyShop.code}}" required minlength="3"
+                maxlength="20">
+        </div>
+        <div class="form-group mt-3">
+            <label class="text-success h6">Toy Price</label>
+            <input class="form-control" type="number" name="price" value="{{ToyShop.price}}" required min=1 max=50>
+        </div>
+        <div class="form-group mt-3">
+            <label class="text-success h6">Toy Image</label><br>
+            <img src="{{student.image}}" width="100" height="100">
+            <input class="form-control mt-3" type="text" name="image" value="{{ToyShop.image}}" required>
+        </div>
+        <div class="form-group mt-3">
+            <input class="btn btn-primary mt-3" type="submit" value="Edit">
+        </div>
+    </form>
+</div>
