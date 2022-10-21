@@ -1,6 +1,14 @@
-<table class="table table-bordered bg-light p-4 mt-3 mb-3 text-center">
+<h2 class="text-primary" colspan="5">Welcome to ATN-ToyShop</h2>
+<table class="table table-bordered bg-light p-4 mt-5 mb-3 text-center">
     <tr>
-        <th class="text-primary" colspan="5">Toy List</th>
+        <th colspan="1">
+            <form action="ToyShop/search" method="post">
+                <div class="form-group">
+                    <input class="form-control" type="search" name="name" placeholder="Search">
+                </div>
+            </form>
+        </th>
+        <th class="text-primary" colspan="4">Toy List</th>
         <th>
             <a class="btn btn-primary" href="/ToyShop/add">Add</a>
             <a class="btn btn-success" href="/ToyShop/drop"
@@ -14,15 +22,6 @@
         <th>Price</th>
         <th>Image</th>
         <th>Menu</th>
-    </tr>
-    <tr>
-        <th colspan="2">
-            <form action="ToyShop/search" method="post">
-                <div class="form-group">
-                    <input class="form-control" type="search" name="name" placeholder="Search">
-                </div>
-            </form>
-        </th>
     </tr>
     {{#each ToyShop }}
     <tr>

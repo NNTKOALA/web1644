@@ -8,8 +8,8 @@ var indexRouter = require('./routes/index');
 var ToyShopRouter = require('./routes/ToyShop');
 
 var mongoose = require('mongoose');
-//var url = "mongodb+srv://nguyentrung:nntrung382k2@cluster.8b5c38m.mongodb.net/ATN"
-var url = "mongodb://localhost:27017/ATN"
+var url = "mongodb+srv://nguyentrung:nntrung382k2@cluster.8b5c38m.mongodb.net/ATN"
+//var url = "mongodb://localhost:27017/ATN"
 
 mongoose.connect(url, { useNewUrlParser: true }, err => {
   if (!err) {
