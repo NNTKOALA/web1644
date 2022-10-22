@@ -1,0 +1,23 @@
+<div>
+    <h2 class="text-primary text-center">Toy List</h2>
+</div>
+
+<div class="container text-center">
+   <div class="card-group">
+      <div class="row">
+         {{#each ToyShop}}
+         <div class="card col-md-3 m-5">
+            <a href="ToyShop/detail/{{_id}}">
+                <img src="{{image}}" width="300" height="300">
+            </a>
+            <div class="card-body">
+                <h4 class="text-primary">{{name}}</h4>
+                <h5 class="text-info">Type: {{type}}</h5>
+                <h5 class="text-info">Code: {{code}}</h5>
+                <h5 class="text-info">Price: {{price}}</h5>
+            </div>
+         </div>
+         {{/each}}
+      </div>
+   </div>
+</div>
