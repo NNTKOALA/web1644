@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var ToyShopRouter = require('./routes/ToyShop');
+var LegoRouter = require('./routes/Lego');
 
 var mongoose = require('mongoose');
 var url = "mongodb+srv://nguyentrung:nntrung382k2@cluster.8b5c38m.mongodb.net/ATN"
@@ -36,6 +37,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', indexRouter);
 app.use('/ToyShop', ToyShopRouter);
+app.use('/Lego', LegoRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
