@@ -1,21 +1,19 @@
 <div>
-    <h2 class="text-primary text-center">Toy List</h2>
+   <h2 class="text-primary text-center">Toy List</h2>
 </div>
 
-<div class="container text-center">
-   <div class="card-group">
-      <div class="row">
-         {{#each ToyShop}}
-         <div class="card col-md-3 m-5">
+<div class="container text-center ">
+   <div class="card-group ">
+      {{#each ToyShop}}
+      <div class="card col-md-3">
+         <div class="card-body">
             <a href="ToyShop/detail/{{_id}}">
-                <img src="{{image}}" width="300" height="300">
+               <img class="card-img-top" src="{{image}}" width="250" height="250">
             </a>
-            <div class="card-body">
-                <h4 class="text-primary">{{name}}</h4>
-                <h5 class="text-info">Price: ${{price}}</h5>
-            </div>
+            <h4 class="text-primary">{{name}}</h4>
+            <h5 class="text-info">Price: ${{price}}</h5>
          </div>
-         {{/each}}
       </div>
+      {{/each}}
    </div>
 </div>

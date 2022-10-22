@@ -1,37 +1,30 @@
-<h2 class="text-primary" colspan="5">Welcome to ATN-ToyShop</h2>
+<h1 class="text-primary">Welcome to ATN-ToyShop</h1> </br>
+
+<form action="ToyShop/search" method="post">
+    <div class="form-group">
+        <input type="search" name="name" placeholder="Search">
+        <a class="btn btn-info">Search</a>
+        <a class="btn btn-primary" href="/ToyShop/add">Add</a>
+        <a class="btn btn-success" href="/ToyShop/drop"
+            onclick="return confirm('Are you sure to drop all student ?');">Drop</a>
+
+    </div>
+</form>
+</br>
 <table class="table table-bordered bg-light p-4 mt-5 mb-3 text-center">
     <tr>
-        <th colspan="1">
-            <form action="ToyShop/search" method="post">
-                <div class="form-group">
-                    <input class="form-control" type="search" name="name" placeholder="Search">
-                </div>
-            </form>
-        </th>
-        <th class="text-primary" colspan="4">Toy List</th>
-        <th>
-            <a class="btn btn-primary" href="/ToyShop/add">Add</a>
-            <a class="btn btn-success" href="/ToyShop/drop"
-                onclick="return confirm('Are you sure to drop all student ?');">Drop</a>
-        </th>
-    </tr>
-    <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Code</th>
-        <th>Price</th>
-        <th>Image</th>
-        <th>Menu</th>
+        <th class="text-center">Name</th>
+        <th class="text-center">Price</th>
+        <th class="text-center">Image</th>
+        <th class="text-center">Menu</th>
     </tr>
     {{#each ToyShop }}
     <tr>
         <td>{{name}}</td>
-        <td>{{type}}</td>
-        <td>{{code}}</td>
         <td>${{price}}</td>
         <td>
             <a href="ToyShop/detail/{{_id}}">
-                <img src="{{image}}" width="100" height="100">
+                <img src="{{image}}" width="150" height="150">
             </a>
         </td>
         <td>

@@ -16,10 +16,10 @@
     "http-errors": "~1.6.3",
     "mongoose": "^6.6.5",
     "morgan": "~1.9.1",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "startbootstrap-sb-admin-2": "^4.1.4"
   },
   "main": "app.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NNTKOALA/web1644.git"

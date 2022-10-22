@@ -5,18 +5,29 @@
   <title>ATN-ToyShop Web Demo</title>
   <link rel='stylesheet' href='/stylesheets/style.css' />
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
   <header>
-    <nav class="alert alert-warning nav justify-content-center  ">
-      <h1><a class="nav-link" href="/">Home</a></h1>
-      <h1><a class="nav-link" href="/homepage">Customer</a></h1>
-      <h1><a class="nav-link" href="/ToyShop">Admin</a></h1>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a class="nav-link" href="/">Home</a></li>
+          <li><a class="nav-link" href="/homepage">Customer</a></li>
+          <li><a class="nav-link" href="/ToyShop">Admin</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
+
 
   {{!-- render ra body của từng webpage --}}
   {{{body}}}
@@ -24,7 +35,7 @@
 </body>
 
 <footer>
-  <p class="alert alert-info text-center mt-5">Nguyen Nhat Trung - Cloud computing - Fall 2022</p>
+  <p class="alert alert-info text-center m-5">Nguyen Nhat Trung - Cloud computing - Fall 2022</p>
 </footer>
 
 </html>
