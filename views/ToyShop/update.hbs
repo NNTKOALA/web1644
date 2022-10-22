@@ -1,13 +1,13 @@
-<div class="container col-md-8 mt-5">
+<div class="container text-center">
     <form action="/ToyShop/edit/{{ToyShop._id}}" method="post" class="card p-3 bg-light text-center">
         <h2 class="text text-primary">Edit Toy Info</h2>
         <div class="form-group">
-            <label class="text-success h6">Toy Name</label>
+            <label class="text-success h4">Toy Name</label>
             <input class="form-control" type="text" name="name" value="{{ToyShop.name}}" required minlength="3"
                 maxlength="20">
         </div>
         <div class="form-group mt-3">
-            <label class="text-success h6">Toy Type</label>
+            <label class="text-success h4">Toy Type</label>
             <select name="type" class="form-control">
                 <option value="">{{ToyShop.type}}</option>
                 <option value="Gundam">Gundam</option>
@@ -15,16 +15,16 @@
             </select>
         </div>
         <div class="form-group mt-3">
-            <label class="text-success h6">Toy Code</label>
+            <label class="text-success h4">Toy Code</label>
             <input class="form-control" type="text" name="code" value="{{ToyShop.code}}" required minlength="3"
                 maxlength="20">
         </div>
         <div class="form-group mt-3">
-            <label class="text-success h6">Toy Price</label>
+            <label class="text-success h4">Toy Price</label>
             <input class="form-control" type="number" name="price" value="{{ToyShop.price}}" required min=1 max=500>
         </div>
         <div class="form-group mt-3">
-            <label class="text-success h6">Toy Image</label><br>
+            <label class="text-success h4">Toy Image</label><br>
             <img src="{{ToyShop.image}}" width="200" height="200">
             <input class="form-control mt-3" type="text" name="image" value="{{ToyShop.image}}" required>
         </div>
