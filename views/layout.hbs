@@ -1,41 +1,10 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>ATN-ToyShop Web Demo</title>
-  <link rel='stylesheet' href='/stylesheets/style.css' />
-  <!-- Bootstrap -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-  <header>
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/">ATN-ToyShop</a>
-        </div>
-        <ul class="nav navbar-nav">
-          <li><a class="nav-link" href="/">Home</a></li>
-          <li><a class="nav-link" href="/homepage">Customer</a></li>
-          <li><a class="nav-link" href="/ToyShop">Admin</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-
-  {{!-- render ra body của từng webpage --}}
-  {{{body}}}
-
-</body>
-
-<footer>
-  <p class="alert alert-info text-center m-5">Nguyen Nhat Trung - Cloud computing - Fall 2022</p>
-</footer>
-
+  <head>
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    {{{body}}}
+  </body>
 </html>

@@ -3,33 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node app",
-    "dev": "nodemon app"
+    "start": "node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "^1.20.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
-    "handlebars-dateformat": "^1.1.3",
     "hbs": "~4.0.4",
     "http-errors": "~1.6.3",
-    "mongoose": "^6.6.5",
-    "morgan": "~1.9.1",
-    "nodemon": "^2.0.20",
-    "startbootstrap-sb-admin-2": "^4.1.4"
-  },
-  "main": "app.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NNTKOALA/web1644.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/NNTKOALA/web1644/issues"
-  },
-  "homepage": "https://github.com/NNTKOALA/web1644#readme",
-  "devDependencies": {},
-  "description": ""
+    "morgan": "~1.9.1"
+  }
 }
