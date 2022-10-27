@@ -8,7 +8,7 @@
         </button>
         <a class="btn btn-primary" href="/ToyShop/add">Add</a>
         <a class="btn btn-success" href="/ToyShop/drop"
-            onclick="return confirm('Are you sure to drop this student ?');">Drop</a>
+            onclick="return confirm('Are you sure to drop all toy ?');">Drop</a>
 
     </div>
 </form>
@@ -30,9 +30,9 @@
             </a>
         </td>
         <td>
-            <a class="btn btn-warning" href="ToyShop/edit/{{_id}}">EDIT</a>
+            <a class="btn btn-warning" href="ToyShop/edit/{{_id}}">Edit</a>
             <a class="btn btn-danger" href="ToyShop/delete/{{_id}}"
-                onclick="return confirm('Are you sure to drop all student ?');">DELETE</a>
+                onclick="return confirm('Are you sure to drop this toy ?');">Delete</a>
         </td>
     </tr>
     {{/each}}
